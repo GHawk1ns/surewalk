@@ -118,8 +118,8 @@ body {
   background-size: cover;
 }
 
-#header_row { 
-	background: #ffffff;
+#header-row { 
+	background: #0a5175;
 	padding-bottom: 35px;
 	padding-top: 35px;
  }
@@ -145,19 +145,9 @@ body {
 }
 
 
-/* Services */
+/* Contact Icons */
 
-.services {
-  background: #0f7183;
-  padding: 50px 0;
-  color: #ffffff;
-}
-
-.service-item {
-  margin-bottom: 15px;
-}
-
-i.service-icon {
+i.contact-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -169,9 +159,30 @@ i.service-icon {
   text-align: center;
 }
 
-/* Callout */
+i.display-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 70px;
+  height: 70px;
+  line-height: 68px;
+  vertical-align: middle; 
+  text-align: center;
+}
 
-.callout {
+/* Horizontal Blue Contact Bar */
+
+.contact-bar {
+  color: #ffffff;
+  background: #0a5175;
+  padding: 50px 0;
+}
+
+
+/* utexas parallax effect */
+
+.parallax-bg {
   color: #ffffff;
   display: table;
   height: 400px;
@@ -181,29 +192,6 @@ i.service-icon {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-/* Portfolio */
-
-.portfolio {
-  padding: 50px 0;
-}
-
-.portfolio-item {
-  margin-bottom: 25px;
-}
-
-.img-portfolio {
-  margin: 0 auto;
-}
-
-
-/* Call to Action */
-
-.bar {
-  color: #ffffff;
-  background: #0a5175;
-  padding: 50px 0;
 }
 
 
@@ -237,26 +225,9 @@ i.scroll:hover {
 }
 /* Responsive */
 
-@media (max-width: 768px) {
-	
-  .header {
-	background: url(../img/bg.jpg) no-repeat center center scroll; 
-  }
-
-  .callout {
-	background: url(../img/towerb10.jpg) no-repeat center center scroll; 
-  }
-
-  .map {
-	height: 75%;
-  }
-
-}
-
 
 /* Carousel base class */
 .carousel {
-  
   margin-bottom: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -273,6 +244,35 @@ i.scroll:hover {
 
 .carousel-inner .item .container{
 	padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+	
+  .header {
+	height: 0%;
+  }
+
+  .parallax-bg {
+    height: 0%;
+  }
+
+  .map {
+	height: 75%;
+  }
+  
+  #requestBox {
+    position: absolute;
+	padding:10px 10px;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+    background: #0f7183;
+  }
+  
+  .carousel .item {
+	  height: 350px;
+	}
+
 }
 
 
