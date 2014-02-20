@@ -133,6 +133,22 @@ body {
   padding: 50px 0;
 }
 
+
+/* Map */
+#mapContainer {
+    position: relative;
+}
+
+#requestBox {
+    position: absolute;
+	padding:15px 15px;
+    top: 25%;
+    left: 75%;
+    z-index: 10;
+    background: #0f7183;
+}
+
+
 /* Services */
 
 .services {
@@ -188,20 +204,17 @@ i.service-icon {
 
 /* Call to Action */
 
-.call-to-action {
+.bar {
   color: #ffffff;
   background: #0a5175;
   padding: 50px 0;
 }
 
-.call-to-action .btn {
-  margin: 10px;
-}
 
 /* Map */
 
 .map {
-  height: 700px;
+  height: 600px;
 }
 
 /* Footer */

@@ -22,7 +22,8 @@
 	</script>
 	
 	<script>
-		var center =new google.maps.LatLng(30.286599,-97.739396);
+		
+		var center =new google.maps.LatLng(30.284085,-97.7229);
 		var w=new google.maps.LatLng(30.283709,-97.751842);
 		var x=new google.maps.LatLng(30.278520,-97.730470);
 		var y=new google.maps.LatLng(30.286599,-97.725320);
@@ -33,24 +34,34 @@
 		var mapProp = {
 		  center:center,
 		  zoom:14,
+		  scaleControl: false,
+		  scrollwheel: false,
 		  mapTypeId: google.maps.MapTypeId.ROADMAP
 		  };
 		  
 		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 		
-		var border=[w,x,y,z];
+		var all = [
+		    new google.maps.LatLng(29.140167, -101),
+		    new google.maps.LatLng(32.392718, -100.9863),
+		    new google.maps.LatLng(32.466902, -94.174805),
+		    new google.maps.LatLng(28.568844, -94.394531)];
+  
+		var border= [new google.maps.LatLng(30.2933, -97.7418),new google.maps.LatLng(30.29365, -97.74720),new google.maps.LatLng(30.29327, -97.74698),new google.maps.LatLng(30.29274, -97.74703),new google.maps.LatLng(30.29228, -97.74740),new google.maps.LatLng(30.29212, -97.74760),new google.maps.LatLng(30.29153, -97.75061),new google.maps.LatLng(30.29117, -97.75103),new google.maps.LatLng(30.29063, -97.75147),new google.maps.LatLng(30.28979, -97.75216),new google.maps.LatLng(30.28905, -97.75259),new google.maps.LatLng(30.28854, -97.75278),new google.maps.LatLng(30.28673, -97.75319),new google.maps.LatLng(30.28640, -97.75321),new google.maps.LatLng(30.28558, -97.75318),new google.maps.LatLng(30.28530, -97.75312),new google.maps.LatLng(30.28483, -97.75294),new google.maps.LatLng(30.28432, -97.75263),new google.maps.LatLng(30.28377, -97.75226),new google.maps.LatLng(30.28377, -97.75170),new google.maps.LatLng(30.28379, -97.75135),new google.maps.LatLng(30.28395, -97.75004),new google.maps.LatLng(30.28388, -97.74945),new google.maps.LatLng(30.28351, -97.74827),new google.maps.LatLng(30.27970, -97.73450),new google.maps.LatLng(30.27585, -97.73601),new google.maps.LatLng(30.27459, -97.73182),new google.maps.LatLng(30.278554,-97.730493),new google.maps.LatLng(30.28325, -97.72791),new google.maps.LatLng(30.28718, -97.726761),new google.maps.LatLng(30.28835, -97.72903),new google.maps.LatLng(30.28907, -97.72997),new google.maps.LatLng(30.28933, -97.73124),new google.maps.LatLng(30.28921, -97.73272),new google.maps.LatLng(30.28949, -97.73322),new google.maps.LatLng(30.29005, -97.73446),new google.maps.LatLng(30.29064, -97.73454),new google.maps.LatLng(30.29124, -97.73492),new google.maps.LatLng(30.29172, -97.73533),new google.maps.LatLng(30.29215, -97.73576),new google.maps.LatLng(30.29240, -97.73591),new google.maps.LatLng(30.29267, -97.73597),new google.maps.LatLng(30.29315, -97.73602),new google.maps.LatLng(30.29432, -97.73745),new google.maps.LatLng(30.29605, -97.74110),new google.maps.LatLng(30.29429, -97.74227)];
+		
+		
 		var coverage=new google.maps.Polygon({
-		  path:border,
-		  strokeColor:"#0000FF",
-		  strokeOpacity:0.8,
-		  strokeWeight:2,
-		  fillColor:"#0000FF",
-		  fillOpacity:0.4
+			paths: [all, border],
+		    strokeColor: "#c2c009",
+		    strokeOpacity: 0.8,
+		    strokeWeight: 2,
+		    fillColor: "#586784",
+		    fillOpacity: 0.5
 		  });
 		
 		coverage.setMap(map);
 		}
-		
+	
 		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 </head>
@@ -108,56 +119,9 @@
         </div>
     </div>
     <!-- /Intro -->
-
-<!-- Services -->
-    <div id="services" class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Services</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-md-offset-4 text-center">
-					<form class="form-horizontal">
-						<fieldset>
-						
-						<!-- Form Name -->
-						<legend>Volunteer Sign In</legend>
-						
-						<!-- Text input-->
-						<div class="control-group">
-						  <label class="control-label" for=""></label>
-						  <div class="controls">
-						    <input id="" name="" type="text" placeholder="username" class="input-xlarge">
-						    
-						  </div>
-						</div>
-						
-						<!-- Password input-->
-						<div class="control-group">
-						  <label class="control-label" for="passwordinput"></label>
-						  <div class="controls">
-						    <input id="passwordinput" name="passwordinput" type="password" placeholder="password" class="input-xlarge" required="">
-						    
-						  </div>
-						</div>
-						
-						<!-- Button -->
-						<div class="control-group">
-						  <label class="control-label" for="singlebutton"></label>
-						  <div class="controls">
-						    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Sign In</button>
-						  </div>
-						</div>
-						
-						</fieldset>
-					</form>
-				</div>
-			
-                <div class="col-md-2 text-center">
-                    <form class="form-horizontal">
+    <div id="mapContainer">
+    	    <div id="requestBox"">
+	    	    <form class="form-horizontal">
 						<fieldset>
 						
 						<!-- Form Name -->
@@ -218,11 +182,9 @@
 						
 						</fieldset>
 					</form>
-                </div>
-            </div>
-        </div>
+    	    </div>
+			<div id="googleMap" style="width:100%;height:500px;"></div>
     </div>
-    <!-- /Services -->
     
     <!-- Callout -->
     <div class="callout">
@@ -232,108 +194,42 @@
 
     </div>
     <!-- /Callout -->
-    <div id="googleMap" style="width:100%;height:500px;"></div>
-	<!-- color bar	 -->
-    <div class="call-to-action">
-		<!--   Color scheme       -->
-    </div>
-    <!--Links and Resources -->
-    <div id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Links and Resources</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/flashlight.png">
-                        </a>
-                        <h4>Facebook</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/flashlight.png">
-                        </a>
-                        <h4>Twitter</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/flashlight.png">
-                        </a>
-                        <h4>Student Government</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/flashlight.png">
-                        </a>
-                        <h4>Campus Police</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Portfolio -->
 
-    <!-- Call to Action -->
-    <div class="call-to-action">
+    <!-- a colord bar across screen -->
+    <div class="bar">
 		<!--   Color scheme       -->
     </div>
     <!-- /Call to Action -->
-
-    <!-- Map -->
-<!--
-    <div id="contact" class="map"> 
-        
-    </div>
--->
-
-    <!-- /Map -->
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    
+                <div class="col-md-6 col-md-offset-3 text-center">   
                     <table class="table table-bordered table-condensed">
-   <tbody>
-      <tr>
-         <td>Location:</td>
-         <td>SAC 2.106</td>
-      </tr>
-      <tr>
-         <td>Hours of Operation</td>
-         <td>Monday – Thursday from 10 p.m. – 2 a.m.</td>
-      </tr>
-      <tr>
-         <td>Phone</td>
-         <td>512-232-9255</td>
-      </tr>
-      <tr>
-         <td>Email</td>
-         <td>surewalk.utsg@gmail.com</td>
-      </tr>
-      <tr>
-         <td>Agency Director:</td>
-         <td> Leigh Larson</td>
-      </tr>
-   </tbody>
-</table>
-                    
-                    
-                    
+					   <tbody>
+					      <tr>
+					         <td>Location:</td>
+					         <td>SAC 2.106</td>
+					      </tr>
+					      <tr>
+					         <td>Hours of Operation</td>
+					         <td>Monday – Thursday from 10 p.m. – 2 a.m.</td>
+					      </tr>
+					      <tr>
+					         <td>Phone</td>
+					         <td>512-232-9255</td>
+					      </tr>
+					      <tr>
+					         <td>Email</td>
+					         <td>surewalk.utsg@gmail.com</td>
+					      </tr>
+					      <tr>
+					         <td>Agency Director:</td>
+					         <td> Leigh Larson</td>
+					      </tr>
+					   </tbody>
+					</table>
                     
                     <div class="top-scroll">
                         <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
