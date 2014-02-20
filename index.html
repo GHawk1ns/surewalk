@@ -23,7 +23,7 @@
 	
 	<script>
 		
-		var center =new google.maps.LatLng(30.284085,-97.7229);
+		var center =new google.maps.LatLng(30.284085,-97.722790);
 		var w=new google.maps.LatLng(30.283709,-97.751842);
 		var x=new google.maps.LatLng(30.278520,-97.730470);
 		var y=new google.maps.LatLng(30.286599,-97.725320);
@@ -65,9 +65,7 @@
 		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 </head>
-
 <body>
-
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
@@ -79,11 +77,32 @@
 	        </li>
 	        <li><a href="#about">About</a>
 	        </li>
-	        <li><a href="#services">Services</a>
-	        </li>
-	        <li><a href="#portfolio">Portfolio</a>
+	        <li><a href="#request">Request a Walk</a>
 	        </li>
 	        <li><a href="#contact">Contact</a>
+	        </li>
+	        <li>
+	        </li>
+	        <li>Volunteer Login
+	        </li>
+	        <li>
+		        <form class="form-horizontal">
+				  <div class="control-group">
+				    <div class="controls">
+				      <input type="text" id="inputEmail" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <div class="controls">
+				      <input type="password" id="inputPassword" placeholder="Password">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <div class="controls">
+				      <button type="submit" class="btn">Sign in</button>
+				    </div>
+				  </div>
+				</form>
 	        </li>
 	    </ul>
     </div>
@@ -112,18 +131,45 @@
             <div class="row">
                 <div class="col-md-12 col-md-offset-0 text-center">
                     <h2>SURE Walk is a student-run volunteer group that provides walks to and from campus to UT students, faculty, and staff, with the help of student volunteers. Volunteers are gathered from trusted organizations from around campus, such as Orange Jackets and APO to name a few, and include both males and females. </h2>
+    
+    <table class="table table-bordered table-condensed">
+					   <tbody>
+					      <tr>
+					         <td>Location:</td>
+					         <td>SAC 2.106</td>
+					      </tr>
+					      <tr>
+					         <td>Hours of Operation</td>
+					         <td>Monday – Thursday from 10 p.m. – 2 a.m.</td>
+					      </tr>
+					      <tr>
+					         <td>Phone</td>
+					         <td>512-232-9255</td>
+					      </tr>
+					      <tr>
+					         <td>Email</td>
+					         <td>surewalk.utsg@gmail.com</td>
+					      </tr>
+					      <tr>
+					         <td>Agency Director:</td>
+					         <td> Leigh Larson</td>
+					      </tr>
+					   </tbody>
+					</table>
+    
+    
                     <p class="lead">An agency of Student Government, SURE Walk is in service Monday through Thursday from 10 p.m. – 2 a.m. during the fall and spring semesters. Upon ordering a walk, two volunteers, one male and one female, will meet you at your current location and walk you to your destination, whether it be on campus or in the greater campus neighborhoods.
 </p>
+
                 </div>
             </div>
         </div>
     </div>
     <!-- /Intro -->
-    <div id="mapContainer">
-    	    <div id="requestBox"">
+    <div id="request">
+    	    <div id="requestBox">
 	    	    <form class="form-horizontal">
 						<fieldset>
-						
 						<!-- Form Name -->
 						<legend>Request a Walk</legend>
 						
@@ -186,50 +232,44 @@
 			<div id="googleMap" style="width:100%;height:500px;"></div>
     </div>
     
-    <!-- Callout -->
-    <div class="callout">
+    <!-- parallax -->
+    <div id="contact" class="callout">
        	<div class="portfolio-item">
 			<img class="img-portfolio img-responsive" src="img/surewalktrans.png">
         </div>
 
     </div>
-    <!-- /Callout -->
-
     <!-- a colord bar across screen -->
     <div class="bar">
-		<!--   Color scheme       -->
+		 <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-md-offset-3 text-center">
+                  <ul class="list-inline">
+                     <li>
+                     	<a href="mailto:surewalk.utsg@gmail.com"><i class="fa fa-envelope fa-3x" style="color:white"></i></a>
+                     </li>
+                     <li>
+                     	<a href="http://facebook.com/surewalk"><i class="fa fa-facebook fa-3x" style="color:white"></i></a>
+                     </li>
+                     <li>
+                     	<a href="http://twitter.com/texassurewalk"><i class="fa fa-twitter fa-3x" style="color:white"></i></a>
+                     </li>
+                     <li>
+                     	<a href="http://github.com/"><i class="fa fa-github fa-3x" style="color:white"></i></a>
+                     </li>
+                     <li>
+                     <a href="http://utsg.org/projects/sure-walk/"><i class="fa fa-gavel fa-3x" style="color:white"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
     </div>
-    <!-- /Call to Action -->
-
     <!-- Footer -->
-    <footer>
+    <footer >
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">   
-                    <table class="table table-bordered table-condensed">
-					   <tbody>
-					      <tr>
-					         <td>Location:</td>
-					         <td>SAC 2.106</td>
-					      </tr>
-					      <tr>
-					         <td>Hours of Operation</td>
-					         <td>Monday – Thursday from 10 p.m. – 2 a.m.</td>
-					      </tr>
-					      <tr>
-					         <td>Phone</td>
-					         <td>512-232-9255</td>
-					      </tr>
-					      <tr>
-					         <td>Email</td>
-					         <td>surewalk.utsg@gmail.com</td>
-					      </tr>
-					      <tr>
-					         <td>Agency Director:</td>
-					         <td> Leigh Larson</td>
-					      </tr>
-					   </tbody>
-					</table>
                     
                     <div class="top-scroll">
                         <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
