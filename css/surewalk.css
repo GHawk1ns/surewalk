@@ -145,19 +145,9 @@ body {
 }
 
 
-/* Services */
+/* Contact Icons */
 
-.services {
-  background: #0f7183;
-  padding: 50px 0;
-  color: #ffffff;
-}
-
-.service-item {
-  margin-bottom: 15px;
-}
-
-i.service-icon {
+i.contact-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -169,7 +159,16 @@ i.service-icon {
   text-align: center;
 }
 
-/* Callout */
+/* Horizontal Blue Contact Bar */
+
+.contact-bar {
+  color: #ffffff;
+  background: #0a5175;
+  padding: 50px 0;
+}
+
+
+/* utexas parallax effect */
 
 .parallax-bg {
   color: #ffffff;
@@ -181,15 +180,6 @@ i.service-icon {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-
-/* Horizontal Blue Contact Bar */
-
-.contact-bar {
-  color: #ffffff;
-  background: #0a5175;
-  padding: 50px 0;
 }
 
 
@@ -223,24 +213,6 @@ i.scroll:hover {
 }
 /* Responsive */
 
-@media (max-width: 768px) {
-	
-  .header {
-	background: url(../img/bg.jpg) no-repeat center center scroll; 
-	height: 25%;
-  }
-
-  .parallax-bg {
-	background: url(../img/towerb10.jpg) no-repeat center center scroll; 
-    height: 25%;
-  }
-
-  .map {
-	height: 75%;
-  }
-
-}
-
 
 /* Carousel base class */
 .carousel {
@@ -261,6 +233,24 @@ i.scroll:hover {
 
 .carousel-inner .item .container{
 	padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+	
+  .header {
+	background: url(../img/bg.jpg) no-repeat center center scroll; 
+	height: 25%;
+  }
+
+  .parallax-bg {
+	background: url(../img/towerb10.jpg) no-repeat center center scroll; 
+    height: 25%;
+  }
+
+  .map {
+	height: 75%;
+  }
+
 }
 
 
