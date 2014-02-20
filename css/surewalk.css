@@ -238,21 +238,24 @@ i.scroll:hover {
 @media (max-width: 768px) {
 	
   .header {
-	background: url(../img/bg.jpg) no-repeat center center scroll; 
-	height: 25%;
+	height: 0%;
   }
 
   .parallax-bg {
-	background: url(../img/towerb10.jpg) no-repeat center center scroll; 
-    height: 25%;
+    height: 0%;
   }
 
   .map {
 	height: 75%;
   }
   
-  .requestBox {
-  	left: 0%;
+  #requestBox {
+    position: absolute;
+	padding:10px 10px;
+    top: 10%;
+    left: 0%;
+    z-index: 10;
+    background: #0f7183;
   }
 
 }
