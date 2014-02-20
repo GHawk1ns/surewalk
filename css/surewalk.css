@@ -21,10 +21,6 @@ body {
 
 /* Side Menu */
 
-
-#menuContainer { position: relative; }
-#num1, #num2 { position: absolute; }
-
 #sidebar-wrapper {
   margin-right: -250px;
   right: 0;
@@ -135,15 +131,15 @@ body {
 
 
 /* Map */
-#mapContainer {
+#request {
     position: relative;
 }
 
 #requestBox {
     position: absolute;
 	padding:15px 15px;
-    top: 25%;
-    left: 75%;
+    top: 10%;
+    left: 65%;
     z-index: 10;
     background: #0f7183;
 }
