@@ -216,7 +216,6 @@ i.scroll:hover {
 
 /* Carousel base class */
 .carousel {
-  
   margin-bottom: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -253,10 +252,14 @@ i.scroll:hover {
     position: absolute;
 	padding:10px 10px;
     top: 10%;
-    left: 0%;
+    left: 10%;
     z-index: 10;
     background: #0f7183;
   }
+  
+  .carousel .item {
+	  height: 350px;
+	}
 
 }
 
