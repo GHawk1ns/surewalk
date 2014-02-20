@@ -159,6 +159,18 @@ i.contact-icon {
   text-align: center;
 }
 
+i.display-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 70px;
+  height: 70px;
+  line-height: 68px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
 /* Horizontal Blue Contact Bar */
 
 .contact-bar {
