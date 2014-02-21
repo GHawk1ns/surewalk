@@ -256,7 +256,7 @@ i.scroll:hover {
 /* Declare heights because of positioning of element */
 .carousel .item {
   color:white;
-  height: 250px;
+  height: 200px;
   background-color: #434b4e;
 }
 
