@@ -282,7 +282,7 @@ i.scroll:hover {
   #requestBox {
     position: absolute;
 	padding:10px 10px;
-    top: 10%;
+    top: 5%;
     left: 10%;
     z-index: 10;
     background: #0f7183;
