@@ -253,7 +253,7 @@ i.scroll:hover {
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* Declare heights because of positioning of element */
 .carousel .item {
   color:white;
   height: 250px;
@@ -287,8 +287,9 @@ i.scroll:hover {
     background: #0f7183;
   }
   
+  /* Stacked text takes up a lot more space, so we need to allocate more space */
   .carousel .item {
-	  height: 350px;
+	  height: 450px;
 	}
 
 }
